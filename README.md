@@ -1,5 +1,5 @@
 # My Fedora Workstation
-Here you can find my Fedora installation and a post install-configuration script
+Here you can find my Fedora installation and a **post-install-configuration** script
 ### Credits
 Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="noopener">**Adw-gtk3**</a>
 <br> Cursor: <a href="https://github.com/ful1e5/apple_cursor" target="_blank" rel="noopener">**Apple-Cursor**</a>
