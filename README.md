@@ -10,9 +10,17 @@ Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="n
 Linux: <a href="https://github.com/balena-io/etcher/releases/download/v1.10.2/balenaEtcher-1.10.2-x64.AppImage?d_id=3a098830-5af4-4dff-bede-95937ba30729&s_id=1671802525579" target="_blank" rel="noopener">**Download**</a> 
 <br> Windows: <a href="https://github.com/balena-io/etcher/releases/download/v1.10.2/balenaEtcher-Portable-1.10.2.exe?d_id=3a098830-5af4-4dff-bede-95937ba30729&s_id=1671802525579" target="_blank" rel="noopener">Download</a>
 <br> Mac: <a href="https://github.com/balena-io/etcher/releases/download/v1.10.2/balenaEtcher-1.10.2.dmg?d_id=3a098830-5af4-4dff-bede-95937ba30729&s_id=1671808440901" target="_blank" rel="noopener">Download</a>
-#### Scripts
-     1. all.sh - do everything in one script
-      2. dnf.sh - make dnf faster
-      3. flat.sh - Add flathub repo
-      4. app.sh - Install all of the apps I need
-      5. theme.sh - git the 2 projects
+## Install
+```
+git clone https://github.com/GabsEdits/fed/
+cd fed
+sudo sh ./all.sh
+```
+
+#### Other scripts:
+```
+sudo sh ./flat.sh  - add flathub repo
+```
+```
+sudo sh ./theme.sh - add adw-gtk3 theme
+```
