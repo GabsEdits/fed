@@ -24,11 +24,14 @@ flatpak install flathub com.github.Eloston.UngoogledChromium
 flatpak install flathub com.spotify.Client
 wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
 rpm -i viber.rpm
-wget https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
-rpm -i code-1.74.2-1671533504.el7.x86_64.rpm
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
+dnf check-update
+dnf install code
 
 # Clear Cache
-sudo dnf clean dbcache OR dnf clean all
+dnf clean dbcache
+dnf clean all
 
 # Theme
 dnf copr enable nickavem/adw-gtk3
