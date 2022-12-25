@@ -24,8 +24,8 @@ flatpak install flathub com.github.Eloston.UngoogledChromium
 flatpak install flathub com.spotify.Client
 wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
 rpm -i viber.rpm
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
 dnf check-update
 dnf install code
 
@@ -37,14 +37,11 @@ dnf clean all
 dnf copr enable nickavem/adw-gtk3
 dnf install adw-gtk3
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-cd /home/gaba
-wget https://github.com/ful1e5/apple_cursor/releases/download/v2.0.0/macOS-Monterey.tar.gz
-tar -xvf macOS-Monterey.tar.gz
-mkdir ./icons
-mv macOS-* ~/.icons/
+dnf copr enable peterwu/rendezvous
+dnf install bibata-cursor-themes
 
 # DNF Config
-sudo nano /etc/dnf/dnf.conf
+nano /etc/dnf/dnf.conf
 # fastestmirror=True
 # max_parallel_downloads=10
 # defaultyes=True
