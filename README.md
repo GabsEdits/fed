@@ -1,5 +1,9 @@
-# My Fedora Workstation
-Here you can find my Fedora installation and a **post-install-configuration** script
+<div align="center">
+  
+  # My Fedora Workstation 🎋
+  <sup2> Here you can find my Fedora installation and a **post-install-configuration** script </sup2>
+  </div>
+  
 ### Credits
 Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="noopener">**Adw-gtk3**</a>
 <br> Cursor: <a href="https://github.com/ful1e5/Bibata_Cursor" target="_blank" rel="noopener">**Bibata-Cursor**</a>
@@ -32,3 +36,5 @@ To add the *adw-gtk3* theme and *Bibata-Cursor*:
 ```
 sudo sh ./theme.sh
 ```
+<div align="center">
+  <sup> Thanks for checking out my project 👋</sup>
