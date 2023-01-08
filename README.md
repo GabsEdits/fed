@@ -28,7 +28,7 @@ To add flathub repo:
 ```
 sudo sh ./flat.sh 
 ```
-To add the adw-gtk3 theme:
+To add the *adw-gtk3* theme and *Bibata-Cursor*:
 ```
 sudo sh ./theme.sh
 ```
