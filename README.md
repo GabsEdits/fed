@@ -20,9 +20,11 @@ sudo sh ./all.sh
 ```
 
 #### Other scripts:
+To add flathub repo:
 ```
-sudo sh ./flat.sh  - add flathub repo
+sudo sh ./flat.sh 
 ```
+To add the adw-gtk3 theme
 ```
-sudo sh ./theme.sh - add adw-gtk3 theme
+sudo sh ./theme.sh
 ```
