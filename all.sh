@@ -19,8 +19,6 @@ hostnamectl set-hostname "asus"
 # Apps
 flatpak install flathub com.discordapp.Discord
 flatpak install flathub org.telegram.desktop
-flatpak install flathub com.bitwarden.desktop
-flatpak install flathub com.github.Eloston.UngoogledChromium
 flatpak install flathub com.spotify.Client
 wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
 rpm -i viber.rpm
