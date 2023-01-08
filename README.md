@@ -15,7 +15,11 @@ Linux: <a href="https://github.com/balena-io/etcher/releases/download/v1.10.2/ba
 ## Install
 ```
 git clone https://github.com/GabsEdits/fed/
+```
+```
 cd fed
+```
+```
 sudo sh ./all.sh
 ```
 
@@ -24,7 +28,7 @@ To add flathub repo:
 ```
 sudo sh ./flat.sh 
 ```
-To add the adw-gtk3 theme
+To add the adw-gtk3 theme:
 ```
 sudo sh ./theme.sh
 ```
