@@ -11,15 +11,15 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 
 # Media Codecs
 dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-dnf groupupdate sound-and-video
+dnf groupupdate sound-and-video -y
 
 # Hostname
 hostnamectl set-hostname "asus"
 
 # Apps
-flatpak install flathub com.discordapp.Discord
-flatpak install flathub org.telegram.desktop
-flatpak install flathub com.spotify.Client
+flatpak install flathub com.discordapp.Discord -y
+flatpak install flathub org.telegram.desktop -y
+flatpak install flathub com.spotify.Client -y
 wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
 rpm -i viber.rpm
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -32,12 +32,12 @@ dnf clean dbcache
 dnf clean all
 
 # Theme
-dnf copr enable nickavem/adw-gtk3
-dnf install adw-gtk3
+dnf copr enable nickavem/adw-gtk3 -y
+dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-dnf install gnome-tweaks
+dnf install gnome-tweaks -y
 dnf copr enable peterwu/rendezvous
-dnf install bibata-cursor-themes
+dnf install bibata-cursor-themes -y
 
 # DNF Config
 nano /etc/dnf/dnf.conf
