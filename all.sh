@@ -38,6 +38,8 @@ gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings
 dnf install gnome-tweaks -y
 dnf copr enable peterwu/rendezvous
 dnf install bibata-cursor-themes -y
+dnf install gnome-shell-extension-pop-shell
+dnf install gnome-extensions
 
 # DNF Config
 nano /etc/dnf/dnf.conf
