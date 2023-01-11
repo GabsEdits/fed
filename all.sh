@@ -25,7 +25,7 @@ rpm -i viber.rpm
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
 dnf check-update
-dnf install code
+dnf install code -y
 
 # Clear Cache
 dnf clean dbcache
@@ -38,9 +38,9 @@ gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings
 dnf install gnome-tweaks -y
 dnf copr enable peterwu/rendezvous
 dnf install bibata-cursor-themes -y
-wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
-dnf install gnome-shell-extension-pop-shell
-dnf install gnome-extensions
+dnf install papirus-icon-theme -y
+dnf install gnome-shell-extension-pop-shell -y
+dnf install gnome-extensions -y
 
 # DNF Config
 nano /etc/dnf/dnf.conf
