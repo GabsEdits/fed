@@ -9,6 +9,7 @@ Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="n
 <br> Cursor: <a href="https://github.com/ful1e5/Bibata_Cursor" target="_blank" rel="noopener">**Bibata-Cursor**</a>
 <br> Icons: <a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme" target="_blank" rel="noopener">**Papirus Icon Theme**</a>
 <br> Local ISO Link: <a href="https://mirror.ihost.md/" target="_blank" rel="noopener">**iHost.md**</a>
+<br>Apps: Discord, Telegram, Spotify, Viber and Microsoft Visual Studio Code</br>
 ## Get the iso from:
 * ISO page: <a href="https://getfedora.org/en/workstation/download/" target="_blank" rel="noopener">/workstation/download/</a>
 * ISO itself: <a href="https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso" target="_blank" rel="noopener">**/x86_64/live/.iso**</a>
