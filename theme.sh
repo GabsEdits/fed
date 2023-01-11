@@ -6,7 +6,8 @@ fi
 
 # Theme install
 dnf copr enable nickavem/adw-gtk3
-dnf install adw-gtk3
+dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-sudo dnf copr enable peterwu/rendezvous
-sudo dnf install bibata-cursor-themes
+dnf copr enable peterwu/rendezvous
+dnf install bibata-cursor-themes -y
+dnf install papirus-icon-theme -y
