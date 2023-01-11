@@ -38,6 +38,7 @@ gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings
 dnf install gnome-tweaks -y
 dnf copr enable peterwu/rendezvous
 dnf install bibata-cursor-themes -y
+wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 dnf install gnome-shell-extension-pop-shell
 dnf install gnome-extensions
 
