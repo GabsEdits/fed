@@ -19,8 +19,8 @@ dnf groupupdate sound-and-video -y
 hostnamectl set-hostname "asus"
 
 # Apps
-flatpak install flathub com.discordapp.Discord -y
-flatpak install flathub org.telegram.desktop -y
+dnf install discord -y
+dnf install telegram-desktop -y
 flatpak install flathub com.spotify.Client -y
 wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
 rpm -i viber.rpm
