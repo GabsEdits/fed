@@ -3,8 +3,10 @@ if [[ $EUID -ne 0 ]]; then
   echo "You must be a root user to run this script, please run sudo sh ./all.sh" 2>&1
   exit 1
 fi
-# Enable flathub repo
+# Enable flathub repo + fix cursor in flatpak apps
  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+ flatpak --user override --filesystem=/home/$USER/.icons/:ro
+ flatpak --user override --filesystem=/usr/share/icons/:ro
  
 # Enable RPM Fusion
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
