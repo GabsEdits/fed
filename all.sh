@@ -9,10 +9,10 @@ fi
  flatpak --user override --filesystem=/usr/share/icons/:ro
  
 # Enable RPM Fusion
-dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
 # Media Codecs
-dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
 dnf groupupdate sound-and-video -y
 
 # Hostname
@@ -38,11 +38,10 @@ dnf copr enable nickavem/adw-gtk3 -y
 dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 dnf install gnome-tweaks -y
-dnf copr enable peterwu/rendezvous
+dnf copr enable peterwu/rendezvous -y
 dnf install bibata-cursor-themes -y
 dnf install papirus-icon-theme -y
 dnf install gnome-shell-extension-pop-shell -y
-dnf install gnome-extensions -y
 
 # DNF Config
 nano /etc/dnf/dnf.conf
