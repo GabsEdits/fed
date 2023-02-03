@@ -38,9 +38,6 @@ dnf copr enable nickavem/adw-gtk3 -y
 dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 dnf install gnome-tweaks -y
-dnf copr enable peterwu/rendezvous -y
-dnf install bibata-cursor-themes -y
-dnf install papirus-icon-theme -y
 dnf install gnome-shell-extension-pop-shell -y
 
 # DNF Config
