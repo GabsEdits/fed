@@ -15,13 +15,8 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
 dnf groupupdate sound-and-video -y
 
-# Hostname
-hostnamectl set-hostname "asus"
-
 # Apps
 dnf install discord -y
-dnf install telegram-desktop -y
-flatpak install flathub com.spotify.Client -y
 wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
 rpm -i viber.rpm
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -37,8 +32,6 @@ dnf clean all
 dnf copr enable nickavem/adw-gtk3 -y
 dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-dnf install gnome-tweaks -y
-dnf install gnome-shell-extension-pop-shell -y
 
 # DNF Config
 nano /etc/dnf/dnf.conf
