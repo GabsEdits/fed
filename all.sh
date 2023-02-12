@@ -17,16 +17,8 @@ dnf groupupdate sound-and-video -y
 
 # Apps
 dnf install discord -y
-wget https://download.cdn.viber.com/desktop/Linux/viber.rpm
-rpm -i viber.rpm
-rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-dnf check-update
-dnf install code -y
-
-# Clear Cache
-dnf clean dbcache
-dnf clean all
+wget https://download.cdn.viber.com/desktop/Linux/viber.rpm && rpm -i viber.rpm
+flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community -y
 
 # Theme
 dnf copr enable nickavem/adw-gtk3 -y
@@ -34,9 +26,8 @@ dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 # DNF Config
-nano /etc/dnf/dnf.conf
-# fastestmirror=True
-# max_parallel_downloads=10
-# defaultyes=True
-# keepcache=True
-# --------
+echo "To make dnf faster do nano /etc/dnf/dnf.conf then add the following:
+fastestmirror=True
+max_parallel_downloads=10
+defaultyes=True
+keepcache=True"
