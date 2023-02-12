@@ -33,7 +33,7 @@ sudo sh second.sh
 ```
 
 #### Other scripts:
-To add flathub repo:
+To add flathub repo **(going to be removed when f38 comes out)**: 
 ```
 sudo sh ./flat.sh 
 ```
