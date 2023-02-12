@@ -3,6 +3,9 @@ if [[ $EUID -ne 0 ]]; then
   echo "You must be a root user to run this script, please run sudo sh ./all.sh" 2>&1
   exit 1
 fi
+
+echo "Run first.sh to have a faster exp. with dnf."
+
 # Enable flathub repo + fix cursor in flatpak apps
  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
  flatpak --user override --filesystem=/home/$USER/.icons/:ro
