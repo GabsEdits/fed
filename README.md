@@ -26,7 +26,10 @@ git clone https://github.com/GabsEdits/fed/
 cd fed
 ```
 ```
-sudo sh ./all.sh
+sudo sh first.sh
+```
+```
+sudo sh second.sh
 ```
 
 #### Other scripts:
@@ -34,7 +37,7 @@ To add flathub repo:
 ```
 sudo sh ./flat.sh 
 ```
-To add the *adw-gtk3* theme and *Bibata-Cursor*:
+To add the *adw-gtk3* theme:
 ```
 sudo sh ./theme.sh
 ```
