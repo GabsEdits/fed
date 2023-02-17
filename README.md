@@ -4,10 +4,9 @@
   <sup2> Here you can find my Fedora installation and a **post-install-configuration** script </sup2>
   </div>
   
+  > This scripts are made for the latest Fedora Workstation release (37 soon 38)
 ### Credits
 Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="noopener">**Adw-gtk3**</a>
-<br> Cursor: <a href="https://github.com/ful1e5/Bibata_Cursor" target="_blank" rel="noopener">**Bibata-Cursor**</a>
-<br> Icons: <a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme" target="_blank" rel="noopener">**Papirus Icon Theme**</a>
 <br> Local ISO Link: <a href="https://mirror.ihost.md/" target="_blank" rel="noopener">**iHost.md**</a>
 <br>Apps: Discord, Telegram, Spotify, Viber and Microsoft Visual Studio Code</br>
 ## Get the iso from:
