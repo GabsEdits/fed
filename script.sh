@@ -4,6 +4,11 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
+sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
+sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
+sh -c 'echo "defaultyes=True" >> /etc/dnf/dnf.conf'
+sh -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
+
 echo "Run first.sh to have a faster exp. with dnf."
 
 # Enable flathub repo + fix cursor in flatpak apps
