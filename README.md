@@ -26,7 +26,7 @@ git clone https://github.com/GabsEdits/fed/
 cd fed
 ```
 ```
-sudo sh scirpt.sh
+sudo sh script.sh
 ```
 
 #### Other scripts:
