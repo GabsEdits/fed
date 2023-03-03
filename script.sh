@@ -1,15 +1,14 @@
 # Check if Script is Run as Root
 if [[ $EUID -ne 0 ]]; then
-  echo "You must be a root user to run this script, please run sudo sh ./all.sh" 2>&1
+  echo "You must be a root user to run this script, please run sudo sh ./script.sh" 2>&1
   exit 1
 fi
 
+echo "Making dnf faster..."
 sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
 sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
 sh -c 'echo "defaultyes=True" >> /etc/dnf/dnf.conf'
 sh -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
-
-echo "Run first.sh to have a faster exp. with dnf."
 
 # Enable flathub repo + fix cursor in flatpak apps
 echo "Adding Flathub"
