@@ -6,6 +6,7 @@ fi
 
 echo "Run first.sh to have a faster exp. with dnf."
 
+fi
 # Enable flathub repo + fix cursor in flatpak apps
 echo "Adding Flathub"
  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -32,3 +33,4 @@ echo "Setting up adw-gtk3 & dark sytle"
 dnf copr enable nickavem/adw-gtk3 -y
 dnf install adw-gtk3 -y
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+fi
