@@ -26,20 +26,22 @@ git clone https://github.com/GabsEdits/fed/
 cd fed
 ```
 ```
-sudo sh first.sh
-```
-```
-sudo sh second.sh
+sudo sh scirpt.sh
 ```
 
 #### Other scripts:
 To add flathub repo **(going to be removed when f38 comes out)**: 
 ```
-sudo sh ./flat.sh 
+sudo sh flat.sh 
 ```
 To add the *adw-gtk3* theme:
 ```
-sudo sh ./theme.sh
+sudo sh theme.sh
 ```
+To make dnf faster
+```
+sudo sh dnf.sh
+```
+
 <div align="center">
   <sup> Thanks for checking out my project 👋</sup>
