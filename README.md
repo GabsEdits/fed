@@ -40,7 +40,7 @@ sudo sh theme.sh
 ```
 To make dnf faster
 ```
-sudo sh dnf.sh
+sudo sh dnf.sh:
 ```
 
 <div align="center">
