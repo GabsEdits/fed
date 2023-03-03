@@ -6,7 +6,6 @@ fi
 
 echo "Run first.sh to have a faster exp. with dnf."
 
-fi
 # Enable flathub repo + fix cursor in flatpak apps
 echo "Adding Flathub"
  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
