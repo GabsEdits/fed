@@ -15,9 +15,9 @@ Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="n
 * ISO itself: [**/x86_64/live/.iso**](https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso)
 * Local ISO (Moldova): [/releases/37/Workstation/x86_64/.iso](https://mirror.ihost.md/fedora/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso)
 ## BalenaEtcher 
-* Linux: [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.3/balenaEtcher-1.18.3-x64.AppImage)
-* Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.3/balenaEtcher-Setup-1.18.3.exe)
-* Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.3/balenaEtcher-1.18.3.dmg)
+* Linux: [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-1.18.4-x64.AppImage)
+* Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-Setup-1.18.4.exe)
+* Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-1.18.4.dmg)
 ## Install
 ```
 git clone https://github.com/GabsEdits/fed/
