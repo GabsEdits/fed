@@ -1,28 +1,23 @@
 #!/bin/bash
 
 usage() {
-  echo "Usage: $0 [-f] [-r] [-m] [-a] [-t] [-l]" 1>&2
+  echo "Usage: $0 [-f] [-r] [-m] [-a] [-t] [-p]" 1>&2
   echo "  -f  Make dnf faster"
   echo "  -r  Add RPM Fusion"
   echo "  -m  Add Multimedia Codecs"
   echo "  -a  Install apps"
   echo "  -t  Set up adw-gtk3 & dark sytle"
-  echo "  -l  Set up Flathub"
+  echo "  -p  Add Flathub"
   exit 1
 }
 
-while getopts ":frmat" option; do
+while getopts ":frmatp" option; do
   case "${option}" in
     f)
       sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
       sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
       sh -c 'echo "defaultyes=True" >> /etc/dnf/dnf.conf'
       sh -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
-      ;;
-    l)
-      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-      flatpak --user override --filesystem=/home/$USER/.icons/:ro
-      flatpak --user override --filesystem=/usr/share/icons/:ro
       ;;
     r)
       dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
@@ -40,6 +35,11 @@ while getopts ":frmat" option; do
       dnf copr enable nickavem/adw-gtk3 -y
       dnf install adw-gtk3 -y
       gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+      ;;
+    p)
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      flatpak --user override --filesystem=/home/$USER/.icons/:ro
+      flatpak --user override --filesystem=/usr/share/icons/:ro
       ;;
     *)
       usage
