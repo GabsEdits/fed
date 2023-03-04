@@ -28,19 +28,15 @@ cd fed
 ```
 sudo sh script.sh
 ```
-
-#### Other scripts:
-To add flathub repo **(going to be removed when f38 comes out)**: 
+## Usage
 ```
-sudo sh flat.sh 
-```
-To add the *adw-gtk3* theme:
-```
-sudo sh theme.sh
-```
-To make dnf faster:
-```
-sudo sh dnf.sh
+  Usage: script.sh [-f] [-r] [-m] [-a] [-t] [-l]
+-f  Make dnf faster
+-r  Add RPM Fusion
+-m  Add Multimedia Codecs
+-a  Install apps
+-l  Set up Flathub
+-t  Set up adw-gtk3 & dark sytle
 ```
 
 <div align="center">
