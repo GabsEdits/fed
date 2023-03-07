@@ -20,10 +20,7 @@ Theme: <a href="https://github.com/lassekongo83/adw-gtk3" target="_blank" rel="n
 * Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-1.18.4.dmg)
 ## Install
 ```
-git clone https://github.com/GabsEdits/fed/
-```
-```
-cd fed
+git clone https://github.com/GabsEdits/fed/ && cd fed
 ```
 ```
 sudo sh script.sh
