@@ -35,7 +35,7 @@ sudo sh script.sh
 -m  Add Multimedia Codecs
 -a  Install apps
 -l  Set up Flathub
--t  Set up adw-gtk3 & dark sytle
+-t  Set up adw-gtk3 & dark style
 ```
 
 <div align="center">

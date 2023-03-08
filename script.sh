@@ -6,7 +6,7 @@ usage() {
   echo "  -r  Add RPM Fusion"
   echo "  -m  Add Multimedia Codecs"
   echo "  -a  Install apps"
-  echo "  -t  Set up adw-gtk3 & dark sytle"
+  echo "  -t  Set up adw-gtk3 & dark style"
   echo "  -p  Add Flathub"
   exit 1
 }
