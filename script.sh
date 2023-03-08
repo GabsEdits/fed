@@ -14,13 +14,10 @@ usage() {
 while getopts ":frmatp" option; do
   case "${option}" in
     f)
-      cat << EOF > /etc/dnf/dnf.conf
-      [main]
-      fastestmirror=True
-      max_parallel_downloads=10
-      defaultyes=True
-      keepcache=True
-      EOF
+      sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
+      sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
+      sh -c 'echo "defaultyes=True" >> /etc/dnf/dnf.conf'
+      sh -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
       ;;
     r)
       dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
