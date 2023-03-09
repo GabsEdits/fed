@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usage() {
-  echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p | -x]" 1>&2
+  echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p|-x]" 1>&2
   echo "  -g    Do all flags (f,r,m,a,t,p)"
   echo "  -f    Make dnf faster"
   echo "  -r    Add RPM Fusion"
