@@ -1,8 +1,8 @@
 #!/bin/bash
 
 usage() {
-  echo "Usage: $0 [-all|-f|-r|-m|-a|-t|-p]" 1>&2
-  echo "  -all  Do all flags (f,r,m,a,t,p)"
+  echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p]" 1>&2
+  echo "  -g  Do all flags (f,r,m,a,t,p)"
   echo "  -f    Make dnf faster"
   echo "  -r    Add RPM Fusion"
   echo "  -m    Add Multimedia Codecs"
@@ -12,9 +12,9 @@ usage() {
   exit 1
 }
 
-while getopts ":allfrmatp" option; do
+while getopts ":gfrmatp" option; do
   case "${option}" in
-    all)
+    g)
       # Do all flags
       if ! grep -q "^fastestmirror=True" /etc/dnf/dnf.conf; then
         sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
