@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usage() {
-  echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p]" 1>&2
+  echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p | -x]" 1>&2
   echo "  -g    Do all flags (f,r,m,a,t,p)"
   echo "  -f    Make dnf faster"
   echo "  -r    Add RPM Fusion"
@@ -9,10 +9,11 @@ usage() {
   echo "  -a    Install apps"
   echo "  -t    Set up adw-gtk3 & dark style"
   echo "  -p    Add Flathub"
+  echo "  -x    Add Apx *don't run with root*"
   exit 1
 }
 
-while getopts ":gfrmatp" option; do
+while getopts ":gfrmatpx" option; do
   case "${option}" in
     g)
       # Do all flags
@@ -87,6 +88,9 @@ fi
       flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       flatpak --user override --filesystem=/home/$USER/.icons/:ro
       flatpak --user override --filesystem=/usr/share/icons/:ro
+      ;;
+    x)
+      curl -s https://raw.githubusercontent.com/spaceguybob/apx-install/main/installer.sh | sh
       ;;
     *)
       usage
