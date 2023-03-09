@@ -3,7 +3,7 @@
   # My Fedora Workstation 🎋
 Here you can find my Fedora installation and a **post-install-configuration** script
 
-<sup>This script is for the latest Fedora Workstation release (37, soon 38)</sup>
+<sup>This script works the best with the supported Fedora Workstation releases (36,37,38 and Rawhide)</sup>
   </div>
   
 ### Credits
