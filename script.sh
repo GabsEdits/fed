@@ -2,7 +2,7 @@
 
 usage() {
   echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p]" 1>&2
-  echo "  -g  Do all flags (f,r,m,a,t,p)"
+  echo "  -g    Do all flags (f,r,m,a,t,p)"
   echo "  -f    Make dnf faster"
   echo "  -r    Add RPM Fusion"
   echo "  -m    Add Multimedia Codecs"
