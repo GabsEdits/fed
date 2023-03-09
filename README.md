@@ -8,7 +8,7 @@ Here you can find my Fedora installation and a **post-install-configuration** sc
   
 ### Credits
 Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `apx-install`
-Theme: [**Adw-gtk3**](https://github.com/lassekongo83/adw-gtk3)
+<br>Theme: [**Adw-gtk3**](https://github.com/lassekongo83/adw-gtk3)
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
 <br>Apps: Discord, Viber, IntelliJ Idea and BalenaEtcher</br>
 ### Find ISO
@@ -30,13 +30,15 @@ sudo sh script.sh
 ```
 ## Usage
 ```
-  Usage: script.sh [-f] [-r] [-m] [-a] [-t] [-l]
--f  Make dnf faster
--r  Add RPM Fusion
--m  Add Multimedia Codecs
--a  Install apps
--l  Set up Flathub
--t  Set up adw-gtk3 & dark style
+    Usage: $0 [-g|-f|-r|-m|-a|-t|-p | -x]
+-g    Do all flags (f,r,m,a,t,p)
+-f    Make dnf faster
+-r    Add RPM Fusion
+-m    Add Multimedia Codecs
+-a    Install apps
+-t    Set up adw-gtk3 & dark style
+-p    Add Flathub
+-x    Add Apx *don't run with root*
 ```
 
 <div align="center">
