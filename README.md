@@ -30,13 +30,15 @@ sudo sh script.sh
 ```
 ## Usage
 ```
-  Usage: script.sh [-f] [-r] [-m] [-a] [-t] [-l]
--f  Make dnf faster
--r  Add RPM Fusion
--m  Add Multimedia Codecs
--a  Install apps
--l  Set up Flathub
--t  Set up adw-gtk3 & dark style
+    Usage: script.sh [-g|-f|-r|-m|-a|-t|-p|-x]
+-g    Do all flags (f,r,m,a,t,p)
+-f    Make dnf faster
+-r    Add RPM Fusion
+-m    Add Multimedia Codecs
+-a    Install apps
+-t    Set up adw-gtk3 & dark style
+-p    Add Flathub
+-x    Add Apx *don't run with root*
 ```
 
 <div align="center">
