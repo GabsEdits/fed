@@ -7,7 +7,8 @@ Here you can find my Fedora installation and a **post-install-configuration** sc
   </div>
   
 ### Credits
-Theme: [**Adw-gtk3**](https://github.com/lassekongo83/adw-gtk3)
+Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `apx-install`
+<br>Theme: [**Adw-gtk3**](https://github.com/lassekongo83/adw-gtk3)
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
 <br>Apps: Discord, Viber, IntelliJ Idea and BalenaEtcher</br>
 ### Find ISO
