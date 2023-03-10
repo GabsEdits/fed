@@ -45,11 +45,9 @@ while getopts ":gfrmatpx" option; do
       dnf install discord -y
       wget https://download.cdn.viber.com/desktop/Linux/viber.rpm && rpm -i viber.rpm
       rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg && printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
-      sudo dnf install codium
-      flatpak install flathub org.gnome.Solanum
-      flatpak install flathub com.rafaelmardojai.Blanket
-      flatpak install flathub com.vixalien.sticky
-      flatpak install flathub io.github.dgsasha.Remembrance
+      dnf install codium -y
+      flatpak install flathub org.gnome.Solanum -y
+      flatpak install flathub com.rafaelmardojai.Blanket -y
 
       dnf copr enable nickavem/adw-gtk3 -y
       dnf install adw-gtk3 -y
