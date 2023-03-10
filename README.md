@@ -10,7 +10,7 @@ Here you can find my Fedora installation and a **post-install-configuration** sc
 Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `apx-install`
 <br>Theme: [**Adw-gtk3**](https://github.com/lassekongo83/adw-gtk3)
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
-<br>Apps: Discord, Viber, IntelliJ Idea and BalenaEtcher</br>
+<br>Apps: Discord, Viber, Solanum, Blanket, Sticky Notes, Reminders and BalenaEtcher</br>
 ### Find ISO
 * ISO page: [/workstation/download/](https://getfedora.org/en/workstation/download/)
 * ISO page (beta): [/workstation/](https://stg.fedoraproject.org/workstation/)
