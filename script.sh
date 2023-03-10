@@ -35,6 +35,10 @@ while getopts ":gfrmatpx" option; do
 
       dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      flatpak --user override --filesystem=/home/$USER/.icons/:ro
+      flatpak --user override --filesystem=/usr/share/icons/:ro
+
       dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
       dnf groupupdate sound-and-video -y
 
@@ -50,10 +54,6 @@ while getopts ":gfrmatpx" option; do
       dnf copr enable nickavem/adw-gtk3 -y
       dnf install adw-gtk3 -y
       gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-
-      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-      flatpak --user override --filesystem=/home/$USER/.icons/:ro
-      flatpak --user override --filesystem=/usr/share/icons/:ro
       ;;
     f)
 if ! grep -q "^fastestmirror=True" /etc/dnf/dnf.conf; then
@@ -82,7 +82,12 @@ fi
     a)
       dnf install discord -y
       wget https://download.cdn.viber.com/desktop/Linux/viber.rpm && rpm -i viber.rpm
-      flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community -y
+      rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg && printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
+      dnf install codium
+      flatpak install flathub org.gnome.Solanum
+      flatpak install flathub com.rafaelmardojai.Blanket
+      flatpak install flathub com.vixalien.sticky
+      flatpak install flathub io.github.dgsasha.Remembrance
       ;;
     t)
       dnf copr enable nickavem/adw-gtk3 -y
