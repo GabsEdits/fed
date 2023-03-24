@@ -1,10 +1,9 @@
 <div align="center">
-  
-  # My Fedora Workstation 🎋
-Here you can find my Fedora installation and a **post-install-configuration** script
-
-<sup>This script works the best with the supported Fedora Workstation releases (36,37,38 and Rawhide)</sup>
-  </div>
+  <img src="https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" width="64">
+  <h1 align="center">My Fedora Workstation</h1>
+  <p align="center">Here you can find my Fedora installation and a <b>post-install-configuration</b> script</p>
+  <sup>This script works the best with the supported Fedora Workstation releases (36,37,38 and Rawhide)</sup>
+</div>
   
 ### Credits
 Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `apx-install`
