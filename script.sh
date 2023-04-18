@@ -2,13 +2,11 @@
 
 usage() {
   echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p|-x]" 1>&2
-  echo "  -g    Do all flags (f,r,m,a,t,p)"
+  echo "  -g    Do all flags (f,r,m,a)"
   echo "  -f    Make dnf faster"
   echo "  -r    Add RPM Fusion"
   echo "  -m    Add Multimedia Codecs"
   echo "  -a    Install apps"
-  echo "  -t    Set up adw-gtk3 & dark style"
-  echo "  -p    Add Flathub"
   echo "  -x    Add Apx *don't run with root*"
   exit 1
 }
