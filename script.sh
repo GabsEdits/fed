@@ -1,8 +1,8 @@
 #!/bin/bash
 
 usage() {
-  echo "Usage: $0 [-g|-f|-r|-m|-a|-t|-p|-x]" 1>&2
-  echo "  -g    Do all flags (f,r,m,a,t,p)"
+  echo "Usage: $0 [-g|-f|-r|-m|-a|-x]" 1>&2
+  echo "  -g    Do all flags (f,r,m,a)"
   echo "  -f    Make dnf faster"
   echo "  -r    Add RPM Fusion"
   echo "  -m    Add Multimedia Codecs"
@@ -42,8 +42,6 @@ while getopts ":gfrmatpx" option; do
       dnf install codium -y
       flatpak install flathub org.gnome.Solanum -y
       flatpak install flathub com.rafaelmardojai.Blanket -y
-
-      gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
       ;;
     f)
 if ! grep -q "^fastestmirror=True" /etc/dnf/dnf.conf; then
@@ -78,8 +76,6 @@ fi
       flatpak install flathub com.rafaelmardojai.Blanket
       flatpak install flathub com.vixalien.sticky
       flatpak install flathub io.github.dgsasha.Remembrance
-      flatpak --user override --filesystem=/home/$USER/.icons/:ro
-      flatpak --user override --filesystem=/usr/share/icons/:ro
       ;;
     x)
       curl -s https://raw.githubusercontent.com/spaceguybob/apx-install/main/installer.sh | sh
