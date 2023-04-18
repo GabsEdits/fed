@@ -10,9 +10,9 @@ Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `a
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
 <br>Apps: Discord, Viber, Solanum, Blanket, VSCondium and BalenaEtcher</br>
 ### Find ISO
-* ISO page: [/workstation/download/](https://getfedora.org/en/workstation/download/)
-* ISO itself: [**/x86_64/live/.iso**]()
-* Local ISO (Moldova): [/releases/38/Workstation/x86_64/.iso]()
+* ISO page: [/workstation/download/](https://fedoraproject.org/workstation/download/)
+* ISO itself: [**/x86_64/live/.iso**](https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso)
+* Local ISO (Moldova): [/releases/38/Workstation/x86_64/.iso](https://mirror.ihost.md/fedora/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso)
 ### BalenaEtcher 
 * Linux: [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-1.18.4-x64.AppImage)
 * Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-Setup-1.18.4.exe)
