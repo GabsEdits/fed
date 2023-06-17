@@ -15,9 +15,6 @@ while getopts ":gfrmatpx" option; do
   case "${option}" in
     g)
       # Do all flags
-      if ! grep -q "^fastestmirror=True" /etc/dnf/dnf.conf; then
-        sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
-      fi
 
       if ! grep -q "^max_parallel_downloads=10" /etc/dnf/dnf.conf; then
         sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
@@ -44,9 +41,6 @@ while getopts ":gfrmatpx" option; do
       flatpak install flathub com.rafaelmardojai.Blanket -y
       ;;
     f)
-if ! grep -q "^fastestmirror=True" /etc/dnf/dnf.conf; then
-  sh -c 'echo "fastestmirror=True" >> /etc/dnf/dnf.conf'
-fi
 
 if ! grep -q "^max_parallel_downloads=10" /etc/dnf/dnf.conf; then
   sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
@@ -68,10 +62,13 @@ fi
       dnf groupupdate sound-and-video -y
       ;;
     a)
-      dnf install discord -y
+      dnf remove firefox -y
+      dnf remove adwaita-qt -y
       wget https://download.cdn.viber.com/desktop/Linux/viber.rpm && rpm -i viber.rpm
       rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg && printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
       dnf install codium
+      flatpak install flathub com.discordapp.Discord
+      flatpak install flathub org.mozilla.firefox
       flatpak install flathub org.gnome.Solanum
       flatpak install flathub com.rafaelmardojai.Blanket
       flatpak install flathub com.vixalien.sticky
