@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" width="64">
   <h1 align="center">My Fedora Workstation</h1>
   <p align="center">Here you can find my Fedora installation and a <b>post-install-configuration</b> script</p>
-  <sup>This script was optimized for Fedora 38 Workstation Edition</sup>
+  <sup>This script was optimized for Fedora 39 Workstation Edition</sup>
 </div>
   
 ### Credits
@@ -11,12 +11,12 @@ Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `a
 <br>Apps: Discord, Viber, Solanum, Blanket, VSCondium and BalenaEtcher</br>
 ### Find ISO
 * ISO page: [/workstation/download/](https://fedoraproject.org/workstation/download/)
-* ISO itself: [**/x86_64/live/.iso**](https://download.fedoraproject.org/pub/fedora/linux/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso)
-* Local ISO (Moldova): [/releases/38/Workstation/x86_64/.iso](https://mirror.ihost.md/fedora/releases/38/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso)
+* ISO itself: [**/x86_64/live/.iso**](https://download.fedoraproject.org/pub/fedora/linux/releases/39/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-39-1.5.iso)
+* Local ISO (Moldova): [/releases/39/Workstation/x86_64/.iso](https://mirror.ihost.md/fedora/releases/39/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-39-1.5.iso)
 ### BalenaEtcher 
-* Linux: [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-1.18.4-x64.AppImage)
-* Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-Setup-1.18.4.exe)
-* Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.4/balenaEtcher-1.18.4.dmg)
+* Linux: [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage)
+* Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-Setup-1.18.11.exe)
+* Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11.dmg)
 
 ## Install
 ```
