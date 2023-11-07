@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" width="64">
   <h1 align="center">My Fedora Workstation</h1>
   <p align="center">Here you can find my Fedora installation and a <b>post-install-configuration</b> script</p>
-  <sup>This script was optimized for Fedora 39 Workstation Edition</sup>
+  <sup>This script was optimized for Fedora 38/39 Workstation Edition</sup>
 </div>
   
 ### Credits
