@@ -27,7 +27,7 @@ export default defineConfig({
       madeby: {
         show: true,
         name: "Gabs",
-        link: "https://gxbs.,e",
+        link: "https://gxbs.me",
       },
     },
   },
@@ -39,40 +39,25 @@ export default defineConfig({
       infoLabel: "Info",
     },
   },
-  head: [ // The head of the page, this is where you put your meta tags
+  head: [
     ["link", { rel: "icon", href: "https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
-    ["meta", { name: "og:site_name", content: "Template" }],
-    [
-      "meta",
-      {
-        name: "og:image",
-        content: "https://aplos.gxbs.me/images/aplos-banner.jpg",
-      },
-    ],
-    ["meta", { name: "twitter:card", content: "summary_large_image" }],
-    [
-      "meta",
-      {
-        name: "twitter:image",
-        content: "https://aplos.gxbs.me/images/aplos-banner.jpg",
-      },
-    ],
-    ["meta", { name: "twitter:title", content: "Aplós" }],
+    ["meta", { name: "og:site_name", content: "My Fedora Workstation (fed)" }],
+    ["meta", { name: "twitter:title", content: "My Fedora Workstation (fed)" }],
     [
       "meta",
       {
         name: "twitter:description",
-        content: "Aplós is a cool template for vitepress",
+        content: "A simple yet useful `Shell Script` that optimizes your system based on my prefrences. Also helps me to install everything I need for an new install.",
       },
     ],
     [
       "meta",
-      { name: "twitter:url", content: "https://fed.gxbs.me" },
+      { name: "twitter:url", content: "https://fed-jet.vercel.app" },
     ],
   ],
-  sitemap: { // The sitemap, for SEO
-    hostname: "https://fed.gxbs.me", // The hostname (domain) of your site
+  sitemap: { 
+    hostname: "https://fed-jet.vercel.app",
   },
 });

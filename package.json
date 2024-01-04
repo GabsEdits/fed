@@ -10,5 +10,8 @@
     "@fontsource/source-code-pro": "^5.0.16",
     "inter-ui": "^4.0.1",
     "vitepress": "^1.0.0-rc.34"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7"
   }
 }
