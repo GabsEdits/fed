@@ -13,6 +13,7 @@ export default defineConfig({
   themeConfig: { // Main Theme
     author: "Gabriel Cozma/Gabs", // Your name
     nav: {
+      show: false,
       links: [ 
         { text: "Script Source", link: "/script" },
       ],

@@ -35,3 +35,7 @@ sudo sh script.sh
 -a    Install apps
 -x    Add Apx *don't run with root*
 ```
+
+## Source Code
+
+The projects is open source and can be found on my GitHub profile at [`GabsEdits/fed`](https://github.com/GabsEdits/fed)
