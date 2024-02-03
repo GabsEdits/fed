@@ -25,6 +25,12 @@ export default defineConfig({
       poweredBy: true,
 
       // To change the text of any of these, just change the text in the quotes, if you want to disable it entirely, set show to false
+
+      sourcecode: {
+        show: true,
+        link: "https://github.com/GabsEdits/fed"
+      },
+
       madeby: {
         show: true,
         name: "Gabs",
