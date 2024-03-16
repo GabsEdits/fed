@@ -18,22 +18,66 @@ Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `a
 * Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-Setup-1.18.11.exe)
 * Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11.dmg)
 
-## Install
-```
+## Installation
+
+To install the Fedora Workstation setup script, follow these steps:
+
+1. Clone the repository & open the cloned folder:
+```sh
 git clone https://github.com/GabsEdits/fed/ && cd fed
 ```
-```
+2. Run the shelll script:
+```sh
 sudo sh script.sh
 ```
-## Usage
+
+## Customization
+
+Feel free to customize the script according to your preferences. You can modify the flags and add/remove specific steps based on your needs.
+
+### Flag Options
+
+- `-g`: Performs all the available flags (`-f`, `-r`, `-m`, `-a`).
+- `-f`: Optimizes the package manager (`dnf`) for faster performance.
+- `-r`: Adds the RPM Fusion repository, which provides additional software packages for Fedora.
+- `-m`: Installs multimedia codecs for playing various media formats.
+- `-a`: Installs a set of pre-defined applications, including Discord, Viber, Solanum, Blanket, VSCondium, and BalenaEtcher.
+- `-x`: Adds the Apx package manager. **Note that this flag should not be used with root privileges (`sudo`)**.
+
+### Usage Examples
+
+Here are some examples of how you can use the script with different flags:
+
+- To perform all the available optimizations and installations, run:
+   
+```sh
+sudo sh script.sh -g
 ```
-    Usage: script.sh [-g|-f|-r|-m|-a|-x]
--g    Do all flags (f,r,m,a)
--f    Make dnf faster
--r    Add RPM Fusion
--m    Add Multimedia Codecs
--a    Install apps
--x    Add Apx *don't run with root*
+
+- If you only want to optimize the package manager, use the `-f` flag:
+ ```sh
+sudo sh script.sh -f
+```
+
+- To add the RPM Fusion repository, use the `-r` flag:
+```sh
+sudo sh script.sh -r
+```
+
+- If you need multimedia codecs, use the `-m` flag:
+```sh
+sudo sh script.sh -m
+```
+
+- To install the predefined set of applications, use the `-a` flag:
+```sh
+sudo sh script.sh -a
+```
+
+- If you want to add the Apx package manager, use the `-x` flag:
+
+```sh
+sh script.sh -x
 ```
 
 <div align="center">
