@@ -11,7 +11,7 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: { // Main Theme
-    author: "Gabriel Cozma", // Your name
+    author: "Gabriel Cozma/Gabs", // Your name
     nav: {
       show: false,
       links: [ 
