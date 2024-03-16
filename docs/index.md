@@ -48,7 +48,7 @@ Feel free to customize the script according to your preferences. You can modify 
 - `-r`: Adds the RPM Fusion repository, which provides additional software packages for Fedora.
 - `-m`: Installs multimedia codecs for playing various media formats.
 - `-a`: Installs a set of pre-defined applications, including Discord, Viber, Solanum, Blanket, VSCondium, and BalenaEtcher.
-- `-x`: Adds the Apx package manager, which allows you to easily install software from GitHub repositories. Note that this flag should not be used with root privileges.
+- `-x`: Adds the Apx package manager. **Note that this flag should not be used with root privileges (`sudo`)**.
 
 ### Usage Examples
 
@@ -81,9 +81,6 @@ sudo sh script.sh -a
 ```
 
 - If you want to add the Apx package manager, use the `-x` flag:
-
-> [!WARNING] Warning
-> **Don't** run the the Apx package manager command with `sudo`, it **won't** work.
 
 ```sh
 sh script.sh -x
