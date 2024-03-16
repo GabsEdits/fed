@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@fontsource/source-code-pro": "^5.0.16",
+    "inter-ui": "^4.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7",
+    "vitepress": "1.0.0-rc.45"
+  }
+}
