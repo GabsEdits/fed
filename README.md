@@ -42,8 +42,7 @@ Feel free to customize the script according to your preferences. You can modify 
 - `-f`: Optimizes the package manager (`dnf`) for faster performance.
 - `-r`: Adds the RPM Fusion repository, which provides additional software packages for Fedora.
 - `-m`: Installs multimedia codecs for playing various media formats.
-- `-a`: Installs a set of pre-defined applications, including Discord, Viber, Solanum, Blanket, VSCondium, and BalenaEtcher.
-- `-x`: Adds the Apx package manager. **Note that this flag should not be used with root privileges (`sudo`)**.
+- `-a`: Installs a set of pre-defined applications, including Discord, Viber, Solanum, Blanket, VSCodium, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards.
 
 ### Usage Examples
 
@@ -73,12 +72,6 @@ sudo sh script.sh -m
 - To install the predefined set of applications, use the `-a` flag:
 ```sh
 sudo sh script.sh -a
-```
-
-- If you want to add the Apx package manager, use the `-x` flag:
-
-```sh
-sh script.sh -x
 ```
 
 <div align="center">
