@@ -8,7 +8,8 @@
 ### Credits
 Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `apx-install`
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
-<br>Apps: Discord, Viber, Solanum, Blanket, VSCondium and BalenaEtcher</br>
+<br>Apps: Discord, Viber, Solanum, Blanket, VSCodium, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
+
 ### Find ISO
 * ISO page: [/workstation/download/](https://fedoraproject.org/workstation/download/)
 * ISO itself: [**/x86_64/live/.iso**](https://download.fedoraproject.org/pub/fedora/linux/releases/39/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-39-1.5.iso)
