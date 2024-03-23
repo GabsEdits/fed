@@ -39,7 +39,7 @@ export default defineConfig({
 
       copyleft: {
         show: true,
-        license: "GNU General Public License v3.0",
+        license: "GNU General Public License",
         info: "https://github.com/GabsEdits/fed/blob/main/LICENSE",
       },
     },
