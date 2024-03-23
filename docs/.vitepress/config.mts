@@ -36,6 +36,12 @@ export default defineConfig({
         name: "Gabs",
         link: "https://gxbs.me",
       },
+
+      copyleft: {
+        show: true,
+        text: "GNU General Public License v3.0",
+        info: "https://github.com/GabsEdits/fed/blob/main/LICENSE",
+      },
     },
   },
   markdown: {
