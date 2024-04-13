@@ -73,4 +73,15 @@ export default defineConfig({
   sitemap: { 
     hostname: "https://fed-jet.vercel.app",
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+          $color-accent: #60a5fa;
+          `,
+        },
+      },
+    },
+  }
 });

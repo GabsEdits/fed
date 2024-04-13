@@ -4,7 +4,6 @@ A simple yet useful `Shell Script` that optimizes your system based on my prefer
 
 ## Credits
 
-- **Apx Installer**: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for it.
 - **Local ISO Link**: [**iHost.md**](https://mirror.ihost.md/)
 - **Apps**: Discord, Viber, Solanum, Blanket, VSCodium, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
 
