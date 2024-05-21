@@ -1,9 +1,5 @@
 main {
-    max-width: 50rem !important;
-}
-
-ul, ol {
-  margin: 10px 0 10px 30px !important;
+  max-width: 50rem !important;
 }
 
 * {
@@ -21,11 +17,11 @@ h3 {
 
 
 #page-title {
-  text-align: center;
-  margin-bottom: 6.25rem;
-  font-size: 1.875rem;
   color: var(--color-accent);
   font-weight: 900;
+  margin-bottom: 0;
+  font-size: 1.875rem;
+  text-align: center;
 
   @media (prefers-color-scheme: dark) {
     background: linear-gradient(95deg, #60a5fa 32.27%, #0a79ff 68.51%);
@@ -34,9 +30,14 @@ h3 {
   }
 
   ::selection {
-    background-color: #000; /* Change the background color of the selected text */
-    color: #fff; /* Change the text color of the selected text */
+    background-color: #000;
+    color: #fff;
   }
+}
+
+#description {
+  margin-bottom: 6.25rem;
+  text-align: center;
 }
 
 aside {
@@ -56,10 +57,11 @@ aside {
 }
 
 #cards ul {
-  margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 10px;
+  margin: 0 !important;
+  padding: 0;
 
   @media screen and (max-width: 600px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -72,11 +74,11 @@ aside {
 
   a {
     display: block;
+    transition: transform 0.3s ease 0s, background-color 0.3s ease 0s;
+    border-radius: 8px;
+    background-color: var(--color-background-second);
     padding: 20px;
     text-align: center;
-    background-color: var(--color-background-second);
-    border-radius: 8px;
-    transition: transform 0.3s ease 0s, background-color 0.3s ease 0s;
 
     &:hover {
       transform: scale(1.05);
