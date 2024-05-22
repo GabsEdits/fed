@@ -1,18 +1,19 @@
 #!/bin/bash
 
 usage() {
-  echo "Usage: $0 [-g|-f|-r|-m|-a]" 1>&2
-  echo "  -g    Do all flags (f,r,m,a)"
-  echo "  -f    Make dnf faster"
-  echo "  -r    Add RPM Fusion"
-  echo "  -m    Add Multimedia Codecs"
-  echo "  -a    Install apps"
-  exit 1
+  echo "Usage: [0-4]" 1>&2
+  echo "  0    Do all options"
+  echo "  1    Make dnf faster"
+  echo "  2    Add RPM Fusion"
+  echo "  3    Add Multimedia Codecs"
+  echo "  4    Install apps"
 }
 
-while getopts ":gfrmatpx" option; do
-  case "${option}" in
-  g)
+usage
+
+while read -p "Enter option (0-4): " option; do
+  case "$option" in
+  0)
     # Do all flags
 
     if ! grep -q "^max_parallel_downloads=10" /etc/dnf/dnf.conf; then
@@ -58,8 +59,7 @@ while getopts ":gfrmatpx" option; do
     flatpak install flathub io.github.shiftey.Desktop
     flatpak install flathub io.github.david_swift.Flashcards
     ;;
-  f)
-
+  1)
     if ! grep -q "^max_parallel_downloads=10" /etc/dnf/dnf.conf; then
       sh -c 'echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf'
     fi
@@ -71,15 +71,18 @@ while getopts ":gfrmatpx" option; do
     if ! grep -q "^keepcache=True" /etc/dnf/dnf.conf; then
       sh -c 'echo "keepcache=True" >> /etc/dnf/dnf.conf'
     fi
+    break
     ;;
-  r)
+  2)
     dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+    break
     ;;
-  m)
+  3)
     dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
     dnf groupupdate sound-and-video -y
+    break
     ;;
-  a)
+  4)
     dnf remove firefox -y
     dnf remove adwaita-qt5 -y
     wget https://download.cdn.viber.com/desktop/Linux/viber.rpm && rpm -i viber.rpm
@@ -105,8 +108,10 @@ while getopts ":gfrmatpx" option; do
     flatpak install flathub app.drey.Damask
     flatpak install flathub io.github.shiftey.Desktop
     flatpak install flathub io.github.david_swift.Flashcards
+    break
     ;;
   *)
+    echo "Invalid option, try again" 1>&2
     usage
     ;;
   esac

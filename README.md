@@ -6,7 +6,6 @@
 </div>
   
 ### Credits
-Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `apx-install`
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
 <br>Apps: Discord, Viber, Solanum, Blanket, VSCodium, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
 
@@ -27,53 +26,25 @@ Apx: Thanks to [@spaceguybob](https://github.com/spaceguybob/) for making the `a
 To download and execute the Fedora Workstation setup script, run the following command in your terminal:
 
 ```sh
-curl -s https://fed.tools.gxbs.me/script | sudo sh
+curl -O https://fed.tools.gxbs.me/script && sudo sh ./script
 ```
 
 ## Customization
 
 Feel free to customize the script according to your preferences. You can modify the flags and add/remove specific steps based on your needs.
 
-### Flag Options
+### Options
 
-- `-g`: Performs all the available flags (`-f`, `-r`, `-m`, `-a`).
-- `-f`: Optimizes the package manager (`dnf`) for faster performance.
-- `-r`: Adds the RPM Fusion repository, which provides additional software packages for Fedora.
-- `-m`: Installs multimedia codecs for playing various media formats.
-- `-a`: Installs a set of pre-defined applications, including Discord, Viber, Solanum, Blanket, VSCodium, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards.
-
-### Usage Examples
-
-Here are some examples of how you can use the script with different flags:
-
-- To perform all the available optimizations and installations, run:
+When running the script, you can specify the flags to customize the installation process. Here are some examples:
 
 ```sh
-sudo sh script.sh -g
-```
-
-- If you only want to optimize the package manager, use the `-f` flag:
-
-```sh
-sudo sh script.sh -f
-```
-
-- To add the RPM Fusion repository, use the `-r` flag:
-
-```sh
-sudo sh script.sh -r
-```
-
-- If you need multimedia codecs, use the `-m` flag:
-
-```sh
-sudo sh script.sh -m
-```
-
-- To install the predefined set of applications, use the `-a` flag:
-
-```sh
-sudo sh script.sh -a
+Usage: [0-4]
+  0    Do all flags (f,r,m,a)
+  1    Make dnf faster
+  2    Add RPM Fusion
+  3    Add Multimedia Codecs
+  4    Install apps
+Enter option (0-4): 
 ```
 
 <div align="center">

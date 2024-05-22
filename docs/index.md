@@ -30,35 +30,23 @@ This `Shell Script` optimizes your system to my preferences, automating the inst
 To download and execute the Fedora Workstation setup script, run the following command in your terminal:
 
 ```sh
-curl -s https://fed.tools.gxbs.me/script | sudo sh
+curl -O https://fed.tools.gxbs.me/script && sudo sh ./script
 ```
 
 ## Customization
 
 Feel free to customize the script according to your preferences. You can modify the flags and add/remove specific steps based on your needs.
 
-### Flag Options
+### Options
 
-- `-g`: Performs all the available flags (`-f`, `-r`, `-m`, `-a`).
-- `-f`: Optimizes the package manager (`dnf`) for faster performance.
-- `-r`: Adds the RPM Fusion repository, which provides additional software packages for Fedora.
-- `-m`: Installs multimedia codecs for playing various media formats.
-- `-a`: Installs a set of pre-defined applications, including [all the apps listed above](#app-credits).
-
-### Usage Examples
-
-Here are some examples of how you can use the script with different flags:
-
-- To perform all the available optimizations and installations, run:
+When running the script, you can specify the flags to customize the installation process. Here are some examples:
 
 ```sh
-curl -s https://fed.tools.gxbs.me/script | sudo sh -s -g
+Usage: [0-4]
+  0    Do all flags (f,r,m,a)
+  1    Make dnf faster
+  2    Add RPM Fusion
+  3    Add Multimedia Codecs
+  4    Install apps
+Enter option (0-4): 
 ```
-
-- If you only want to optimize the package manager, use the `-f` flag:
-
-```sh
-curl -s https://fed.tools.gxbs.me/script | sudo sh -s -f
-```
-
-And so on...
