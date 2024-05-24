@@ -2,12 +2,12 @@
   <img src="https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" width="64">
   <h1 align="center">My Fedora Workstation</h1>
   <p align="center">Here you can find my Fedora installation and a <b>post-install-configuration</b> script</p>
-  <small>This script was optimized for Fedora 38-40 Workstation Edition</small>
+  <small>This script was optimized for Fedora 39/40 Workstation Edition or the Asahi Linux Remix</small>
 </div>
   
 ### Credits
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
-<br>Apps: Discord, Viber, Solanum, Blanket, VSCodium, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
+<br>Apps: Discord*, Viber*, Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
 
 ### Find ISO
 
@@ -46,6 +46,10 @@ Usage: [0-4]
   4    Install apps
 Enter option (0-4): 
 ```
+
+## Notes
+
+- \* = Only for x86_64, not ARM64
 
 <div align="center">
   <sup> Thanks for checking out my project 👋</sup>
