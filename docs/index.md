@@ -35,10 +35,6 @@ curl -O https://fed.tools.gxbs.me/script && sudo sh ./script
 
 ## Customization
 
-Feel free to customize the script according to your preferences. You can modify the flags and add/remove specific steps based on your needs.
-
-### Options
-
 When running the script, you can specify the flags to customize the installation process. Here are some examples:
 
 ```sh
