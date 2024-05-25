@@ -44,26 +44,36 @@ while read -p "Enter option (0-4): " option; do
     wget https://download.cdn.viber.com/desktop/Linux/viber.rpm && rpm -i viber.rpm
     rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg && printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
     dnf install codium
-    flatpak install flathub com.discordapp.Discord
-    flatpak install flathub org.mozilla.firefox
-    flatpak install flathub org.gnome.Solanum
-    flatpak install flathub com.rafaelmardojai.Blanket
-    flatpak install flathub com.vixalien.sticky
-    flatpak install flathub com.mattjakeman.ExtensionManager
-    flatpak install flathub io.github.nokse22.teleprompter
-    flatpak install flathub com.rafaelmardojai.SharePreview
-    flatpak install flathub org.gnome.design.Contrast
-    flatpak install flathub io.gitlab.news_flash.NewsFlash
-    flatpak install flathub org.gnome.World.Iotas
-    flatpak install flathub org.gnome.gitlab.somas.Apostrophe
-    flatpak install flathub org.gnome.design.Emblem
-    flatpak install flathub org.gnome.design.Lorem
-    flatpak install flathub fr.romainvigier.MetadataCleaner
+
     flatpak install https://valent.andyholmes.ca/valent.flatpakref
-    flatpak install flathub com.raggesilver.BlackBox
-    flatpak install flathub app.drey.Damask
-    flatpak install flathub io.github.shiftey.Desktop
-    flatpak install flathub io.github.david_swift.Flashcards
+
+    all_apps=(
+      "com.discordapp.Discord",
+      "org.mozilla.firefox",
+      "org.gnome.Solanum",
+      "com.rafaelmardojai.Blanket",
+      "com.vixalien.sticky",
+      "com.mattjakeman.ExtensionManager",
+      "io.github.nokse22.teleprompter",
+      "com.rafaelmardojai.SharePreview",
+      "org.gnome.design.Contrast",
+      "io.gitlab.news_flash.NewsFlash",
+      "org.gnome.World.Iotas",
+      "org.gnome.gitlab.somas.Apostrophe",
+      "org.gnome.design.Emblem",
+      "org.gnome.design.Lorem",
+      "fr.romainvigier.MetadataCleaner",
+      "com.raggesilver.BlackBox",
+      "app.drey.Damask",
+      "io.github.shiftey.Desktop",
+      "io.github.david_swift.Flashcards"
+    )
+
+    for app in "${all_apps[@]}"; do
+      echo -e "\033[1m=== Installing $app... ===\033[0m"
+      flatpak install flathub "$app"
+      echo -e "\033[1m=== $app installed successfully! ===\033[0m"
+    done
     ;;
   1)
     if ! grep -q "^max_parallel_downloads=10" /etc/dnf/dnf.conf; then
@@ -91,28 +101,60 @@ while read -p "Enter option (0-4): " option; do
   4)
     if [[ $asahi == "y" ]]; then
       echo "Discord is not available for ARM64, you will make an webapp of it yourself."
+
+      all_apps=(
+        "org.mozilla.firefox",
+        "org.gnome.Solanum",
+        "com.rafaelmardojai.Blanket",
+        "com.vixalien.sticky",
+        "com.mattjakeman.ExtensionManager",
+        "io.github.nokse22.teleprompter",
+        "com.rafaelmardojai.SharePreview",
+        "org.gnome.design.Contrast",
+        "io.gitlab.news_flash.NewsFlash",
+        "org.gnome.World.Iotas",
+        "org.gnome.gitlab.somas.Apostrophe",
+        "org.gnome.design.Emblem",
+        "org.gnome.design.Lorem",
+        "fr.romainvigier.MetadataCleaner",
+        "com.raggesilver.BlackBox",
+        "app.drey.Damask",
+        "io.github.shiftey.Desktop",
+        "io.github.david_swift.Flashcards"
+      )
     else
-      flatpak install flathub com.discordapp.Discord
+      all_apps=(
+        "com.discordapp.Discord",
+        "org.mozilla.firefox",
+        "org.gnome.Solanum",
+        "com.rafaelmardojai.Blanket",
+        "com.vixalien.sticky",
+        "com.mattjakeman.ExtensionManager",
+        "io.github.nokse22.teleprompter",
+        "com.rafaelmardojai.SharePreview",
+        "org.gnome.design.Contrast",
+        "io.gitlab.news_flash.NewsFlash",
+        "org.gnome.World.Iotas",
+        "org.gnome.gitlab.somas.Apostrophe",
+        "org.gnome.design.Emblem",
+        "org.gnome.design.Lorem",
+        "fr.romainvigier.MetadataCleaner",
+        "com.raggesilver.BlackBox",
+        "app.drey.Damask",
+        "io.github.shiftey.Desktop",
+        "io.github.david_swift.Flashcards"
+      )
+
     fi
-    flatpak install flathub org.mozilla.firefox
-    flatpak install flathub org.gnome.Solanum
-    flatpak install flathub com.rafaelmardojai.Blanket
-    flatpak install flathub com.vixalien.sticky
-    flatpak install flathub com.mattjakeman.ExtensionManager
-    flatpak install flathub io.github.nokse22.teleprompter
-    flatpak install flathub com.rafaelmardojai.SharePreview
-    flatpak install flathub org.gnome.design.Contrast
-    flatpak install flathub io.gitlab.news_flash.NewsFlash
-    flatpak install flathub org.gnome.World.Iotas
-    flatpak install flathub org.gnome.gitlab.somas.Apostrophe
-    flatpak install flathub org.gnome.design.Emblem
-    flatpak install flathub org.gnome.design.Lorem
-    flatpak install flathub fr.romainvigier.MetadataCleaner
+
+    for app in "${all_apps[@]}"; do
+      echo -e "\033[1m=== Installing $app... ===\033[0m"
+      flatpak install flathub "$app"
+      echo -e "\033[1m=== $app installed successfully! ===\033[0m"
+    done
+
     flatpak install https://valent.andyholmes.ca/valent.flatpakref
-    flatpak install flathub com.raggesilver.BlackBox
-    flatpak install flathub app.drey.Damask
-    flatpak install flathub io.github.shiftey.Desktop
-    flatpak install flathub io.github.david_swift.Flashcards
+
     break
     ;;
   *)
