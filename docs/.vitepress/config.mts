@@ -11,6 +11,7 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: { // Main Theme
+    minimal: true,
     author: "Gabriel Cozma/Gabs", // Your name
     nav: {
       show: false,
@@ -67,11 +68,11 @@ export default defineConfig({
     ],
     [
       "meta",
-      { name: "twitter:url", content: "https://fed-jet.vercel.app" },
+      { name: "twitter:url", content: "https://fed.tools.gxbs.me" },
     ],
   ],
   sitemap: { 
-    hostname: "https://fed-jet.vercel.app",
+    hostname: "https://fed.tools.gxbs.me",
   },
   vite: {
     css: {

@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       aplos:
-        specifier: ^1.5.1
-        version: 1.5.1
+        specifier: ^2.0.2
+        version: 2.0.2
     devDependencies:
       sass:
         specifier: ^1.77.2
@@ -40,9 +40,6 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
 
   '@algolia/cache-browser-local-storage@4.23.3':
     resolution: {integrity: sha512-vRHXYCpPlTDE7i6UOy2xE03zHF2C8MEFjPN2v7fRbqVpcOvAUQK81x3Kc21xyb5aSIpYCjWCZbYZuz8Glyzyyg==}
@@ -478,8 +475,8 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  aplos@1.5.1:
-    resolution: {integrity: sha512-TKH+afyML717E+2GrU6OwpU9glboXUEbn1bEtpsoKnOyAPNYsJk90xA1sCLCWcoWOaxEdocHahulRaVlEoaBxA==}
+  aplos@2.0.2:
+    resolution: {integrity: sha512-2CyOKL2D2OQSWky/p6ft0tX7r7l/5UyOGKfJxBCZjd7m9LAZHTvzFEaK0qsx1M2L7J/OmkjMinrkv4mQr/ocKA==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -719,9 +716,8 @@ snapshots:
 
   '@algolia/autocomplete-shared@1.9.3(@algolia/client-search@4.23.3)(algoliasearch@4.23.3)':
     dependencies:
-      algoliasearch: 4.23.3
-    optionalDependencies:
       '@algolia/client-search': 4.23.3
+      algoliasearch: 4.23.3
 
   '@algolia/cache-browser-local-storage@4.23.3':
     dependencies:
@@ -1107,12 +1103,15 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  aplos@1.5.1:
+  aplos@2.0.2:
     dependencies:
       '@csstools/normalize.css': 12.1.1
       inter-ui: 4.0.2
       non.geist: 1.0.3
       sass: 1.77.2
+      vue: 3.4.27
+    transitivePeerDependencies:
+      - typescript
 
   binary-extensions@2.3.0: {}
 

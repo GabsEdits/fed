@@ -44,7 +44,8 @@ Usage: [0-4]
   2    Add RPM Fusion
   3    Add Multimedia Codecs
   4    Install apps
-Enter option (0-4): 
+
+Enter option (0-4):
 ```
 
 ## Notes
