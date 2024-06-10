@@ -1,13 +1,15 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" width="64">
-  <h1 align="center">My Fedora Workstation</h1>
+  <h1 align="center">My Fedora Linux</h1>
   <p align="center">Here you can find my Fedora installation and a <b>post-install-configuration</b> script</p>
-  <small>This script was optimized for Fedora 39/40 Workstation Edition or the Asahi Linux Remix</small>
+  <small>This script is optimized for both Fedora Workstation and Asahi Remix 39/40 with GNOME.</small>
 </div>
   
 ### Credits
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
 <br>Apps: Discord*, Viber*, Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
+
+**\*** = Only for `x86_64`, not `aarch64`
 
 ### Find ISO
 
@@ -17,9 +19,9 @@
 
 ### BalenaEtcher
 
-- Linux: [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage)
+- Linux (AppImage): [**Download**](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage)
 - Windows: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-Setup-1.18.11.exe)
-- Mac: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11.dmg)
+- MacOS: [Download](https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11.dmg)
 
 ## Installation
 
@@ -35,17 +37,12 @@ When running the script, you can specify the flags to customize the installation
 
 ```sh
 Usage: [0-4]
-  0    Do all flags (f,r,m,a)
+  0    Do all options (1-4)
   1    Make dnf faster
   2    Add RPM Fusion
   3    Add Multimedia Codecs
   4    Install apps
-Enter option (0-4): 
 ```
-
-## Notes
-
-- \* = Only for x86_64, not ARM64
 
 <div align="center">
   <sup> Thanks for checking out my project 👋</sup>

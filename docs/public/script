@@ -2,7 +2,7 @@
 
 usage() {
   echo "Usage: [0-4]" 1>&2
-  echo "  0    Do all options"
+  echo "  0    Do all options (1-4)"
   echo "  1    Make dnf faster"
   echo "  2    Add RPM Fusion"
   echo "  3    Add Multimedia Codecs"
@@ -17,10 +17,14 @@ check_root() {
 }
 
 configure_dnf() {
-  local config_file="/etc/dnf/dnf.conf"
-  grep -qxF "max_parallel_downloads=10" $config_file || echo "max_parallel_downloads=10" >>$config_file
-  grep -qxF "defaultyes=True" $config_file || echo "defaultyes=True" >>$config_file
-  grep -qxF "keepcache=True" $config_file || echo "keepcache=True" >>$config_file
+  if [[ $asahi == "y" ]]; then
+    echo "Asahi Linux is being used. Skipping dnf configuration, it's already optimized."
+  else
+    local config_file="/etc/dnf/dnf.conf"
+    grep -qxF "max_parallel_downloads=10" $config_file || echo "max_parallel_downloads=10" >>$config_file
+    grep -qxF "defaultyes=True" $config_file || echo "defaultyes=True" >>$config_file
+    grep -qxF "keepcache=True" $config_file || echo "keepcache=True" >>$config_file
+  fi
 }
 
 add_rpm_fusion() {
@@ -34,7 +38,6 @@ add_multimedia_codecs() {
 
 install_apps() {
   local common_apps=(
-    "org.mozilla.firefox"
     "org.gnome.Solanum"
     "com.rafaelmardojai.Blanket"
     "com.vixalien.sticky"
@@ -55,7 +58,7 @@ install_apps() {
   )
 
   local asahi_apps=("${common_apps[@]}")
-  local non_asahi_apps=("com.discordapp.Discord" "${common_apps[@]}")
+  local non_asahi_apps=("com.discordapp.Discord" "org.mozilla.firefox" "${common_apps[@]}")
 
   if [[ $asahi == "y" ]]; then
     echo "Some apps are not available for ARM64, Discord will be replaced with Armcord and other software will be changed accordingly."
@@ -70,7 +73,18 @@ install_apps() {
     echo -e "\033[1m=== $app installed successfully! ===\033[0m"
   done
 
+  echo -e "\033[1m=== Installing Valent... ===\033[0m"
   flatpak install https://valent.andyholmes.ca/valent.flatpakref -y
+  echo -e "\033[1m=== Valent installed successfully! ===\033[0m"
+
+  if [[ $asahi == "y" ]]; then
+    echo "Asahi Linux is being used. Skipping Viber installation, it's not available for ARM64."
+    return
+  else
+    echo -e "\033[1m=== Installing Viber... ===\033[0m"
+    dnf install https://download.cdn.viber.com/cdn/desktop/Linux/viber.rpm -y
+    echo -e "\033[1m=== Viber installed successfully! ===\033[0m"
+  fi
 }
 
 read -p "Does it run Asahi Linux? (y/n): " asahi
