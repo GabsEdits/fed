@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "en-US",
-  title: "My Fedora Workstation",
+  title: "My Fedora Linux",
   description:
     "My Fedora installation and a post-install-configuration script",
 
