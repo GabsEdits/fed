@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { footnote } from "@mdit/plugin-footnote";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -46,6 +47,9 @@ export default defineConfig({
     },
   },
   markdown: {
+    config: (md) => {
+      md.use(footnote);
+    },
     container: { // The markdown cards
       warningLabel: "⚠ Warning",
       tipLabel: "Tip",

@@ -7,9 +7,9 @@ This `Shell Script` optimizes your system to my preferences, automating the inst
 ## Credits
 
 - **Local ISO Link**: [iHost.md](https://mirror.ihost.md/)
-- **Apps**: Firefox[*](#notes), Discord[*](#notes), Viber[*](#notes), Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards { #app-credits }
+- **Apps**: Firefox[^limited], Discord[^limited], Viber[^limited], Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards { #app-credits }
 
-**\*** = Only for `x86_64`, not `aarch64` { #notes }
+[^limited]: Only for `x86_64`, not `aarch64`
 
 ### Locating the ISO
 
