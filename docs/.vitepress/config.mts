@@ -5,20 +5,18 @@ import { footnote } from "@mdit/plugin-footnote";
 export default defineConfig({
   lang: "en-US",
   title: "My Fedora Linux",
-  description:
-    "My Fedora installation and a post-install-configuration script",
+  description: "My Fedora installation and a post-install-configuration script",
 
   lastUpdated: true,
   cleanUrls: true,
 
-  themeConfig: { // Main Theme
+  themeConfig: {
+    // Main Theme
     minimal: true,
     author: "Gabriel Cozma/Gabs", // Your name
     nav: {
       show: false,
-      links: [ 
-        { text: "Script Source", link: "/script" },
-      ],
+      links: [{ text: "Script Source", link: "/script" }],
       git: "https://github.com/GabsEdits/fed", // Link to the source code of your site
     },
     footer: {
@@ -30,7 +28,7 @@ export default defineConfig({
 
       sourcecode: {
         show: true,
-        link: "https://github.com/GabsEdits/fed"
+        link: "https://github.com/GabsEdits/fed",
       },
 
       madeby: {
@@ -42,7 +40,7 @@ export default defineConfig({
       copyleft: {
         show: true,
         license: "GNU General Public License",
-        info: "https://github.com/GabsEdits/fed/blob/main/LICENSE",
+        info: "https://github.com/GabsEdits/fed/blob/main/LICENSE.txt",
       },
     },
   },
@@ -50,7 +48,8 @@ export default defineConfig({
     config: (md) => {
       md.use(footnote);
     },
-    container: { // The markdown cards
+    container: {
+      // The markdown cards
       warningLabel: "⚠ Warning",
       tipLabel: "Tip",
       dangerLabel: "⚠ Danger",
@@ -58,24 +57,28 @@ export default defineConfig({
     },
   },
   head: [
-    ["link", { rel: "icon", href: "https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg" }],
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "https://raw.githubusercontent.com/twitter/twemoji/d94f4cf793e6d5ca592aa00f58a88f6a4229ad43/assets/svg/1f38b.svg",
+      },
+    ],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
-    ["meta", { name: "og:site_name", content: "My Fedora Workstation (fed)" }],
-    ["meta", { name: "twitter:title", content: "My Fedora Workstation (fed)" }],
+    ["meta", { name: "og:site_name", content: "My Fedora Linux (fed)" }],
+    ["meta", { name: "twitter:title", content: "My Fedora Linux (fed)" }],
     [
       "meta",
       {
         name: "twitter:description",
-        content: "A simple yet useful `Shell Script` that optimizes your system based on my prefrences. Also helps me to install everything I need for an new install.",
+        content:
+          "A simple yet useful Shell Script that optimizes your system based on my prefrences. Also helps me to install everything I need for an new install.",
       },
     ],
-    [
-      "meta",
-      { name: "twitter:url", content: "https://fed.tools.gxbs.me" },
-    ],
+    ["meta", { name: "twitter:url", content: "https://fed.tools.gxbs.me" }],
   ],
-  sitemap: { 
+  sitemap: {
     hostname: "https://fed.tools.gxbs.me",
   },
   vite: {
@@ -88,5 +91,5 @@ export default defineConfig({
         },
       },
     },
-  }
+  },
 });

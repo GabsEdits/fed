@@ -5,7 +5,8 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "aplos": "^2.0.2"
+    "@mdit/plugin-footnote": "^0.12.0",
+    "aplos": "^2.4.0"
   },
   "devDependencies": {
     "sass": "^1.77.2",
