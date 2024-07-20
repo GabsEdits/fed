@@ -2,14 +2,12 @@
 
 <small>An efficient script to optimize Fedora Workstation and Asahi Remix 39/40 with GNOME.</small> { #description }
 
-This `Shell Script` optimizes your system to my preferences, automating the installation of essential software and configurations. It saves time by performing tasks like optimizing the package manager, installing codecs, and setting up applications. With a single command, the system is ready with all necessary tools and settings, simplifying the setup process for new installations or devices.
+This Shell Script optimizes your system to my preferences, automating the installation of essential software and configurations. It saves time by performing tasks like optimizing the package manager, installing codecs, and setting up applications. With a single command, the system is ready with all necessary tools and settings, simplifying the setup process for new installations or devices.
 
 ## Credits
 
 - **Local ISO Link**: [iHost.md](https://mirror.ihost.md/)
-- **Apps**: Firefox[^limited], Discord[^limited], Viber[^limited], Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards { #app-credits }
-
-[^limited]: Only for `x86_64`, not `aarch64`
+- **Apps**: Firefox[^noarm], Discord[^noarm], Viber[^noarm], Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards { #app-credits }
 
 ### Locating the ISO
 
@@ -47,3 +45,5 @@ Usage: [0-4]
   3    Add Multimedia Codecs
   4    Install apps
 ```
+
+[^noarm]: Only for `x86_64`, not `aarch64`

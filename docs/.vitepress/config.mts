@@ -16,7 +16,6 @@ export default defineConfig({
     author: "Gabriel Cozma/Gabs", // Your name
     nav: {
       show: false,
-      links: [{ text: "Script Source", link: "/script" }],
       git: "https://github.com/GabsEdits/fed", // Link to the source code of your site
     },
     footer: {
@@ -34,7 +33,7 @@ export default defineConfig({
       madeby: {
         show: true,
         name: "Gabs",
-        link: "https://gxbs.me",
+        link: "https://www.gxbs.me",
       },
 
       copyleft: {
@@ -47,13 +46,6 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(footnote);
-    },
-    container: {
-      // The markdown cards
-      warningLabel: "⚠ Warning",
-      tipLabel: "Tip",
-      dangerLabel: "⚠ Danger",
-      infoLabel: "Info",
     },
   },
   head: [
