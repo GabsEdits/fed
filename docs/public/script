@@ -77,6 +77,10 @@ install_apps() {
   flatpak install https://valent.andyholmes.ca/valent.flatpakref -y
   echo -e "\033[1m=== Valent installed successfully! ===\033[0m"
 
+  echo -e "\033[1m=== Installing Zed... ===\033[0m"
+  curl -f https://zed.dev/install.sh | sh
+  echo -e "\033[1m=== Zed installed successfully! ===\033[0m"
+
   if [[ $asahi == "y" ]]; then
     echo "Asahi Linux is being used. Skipping Viber installation, it's not available for ARM64."
     return
