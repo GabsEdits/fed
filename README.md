@@ -4,10 +4,10 @@
   <p align="center">Here you can find my Fedora installation and a <b>post-install-configuration</b> script</p>
   <small>This script is optimized for both Fedora Workstation and Asahi Remix 39/40 with GNOME.</small>
 </div>
-  
+
 ### Credits
 <br> Local ISO Link: [**iHost.md**](https://mirror.ihost.md/)
-<br>Apps: Discord*, Viber*, Solanum, Blanket, VSCodium/VSCode, Sticky Notes, Extension Manager, Teleprompter, Share Preview, Contrast, NewsFlash, Iotas, Apostrophe, Emblem, Lorem, Metadata Clener, Valent, Black Box, Damask, GitHub Desktop and Flashcards
+<br>Apps: [Firefox[^noarm]](https://flathub.org/apps/org.mozilla.firefox), [Discord[^noarm]](https://flathub.org/apps/com.discordapp.Discord), [Viber[^noarm]](https://flathub.org/apps/com.viber.Viber), [Solanum](https://flathub.org/apps/org.gnome.Solanum), [Blanket](https://flathub.org/apps/com.rafaelmardojai.Blanket), [VSCodium](https://vscodium.com)/[VSCode](https://code.visualstudio.com/), [Sticky Notes](https://flathub.org/apps/com.vixalien.sticky), [Extension Manager](https://flathub.org/apps/com.mattjakeman.ExtensionManager), [Teleprompter](https://flathub.org/apps/io.github.nokse22.teleprompter), [Share Preview](https://flathub.org/apps/com.rafaelmardojai.SharePreview), [Contrast](https://flathub.org/apps/org.gnome.design.Contrast), [NewsFlash](https://flathub.org/apps/io.gitlab.news_flash.NewsFlash), [Iotas](https://flathub.org/apps/org.gnome.World.Iotas), [Apostrophe](https://flathub.org/apps/org.gnome.gitlab.somas.Apostrophe), [Emblem](https://flathub.org/apps/org.gnome.design.Emblem), [Lorem](https://flathub.org/apps/org.gnome.design.Lorem), [Metadata Clener](https://flathub.org/apps/fr.romainvigier.MetadataCleaner), [Valent](https://valent.andyholmes.ca/), [Black Box](https://flathub.org/apps/com.raggesilver.BlackBox), [Damask](https://flathub.org/apps/app.drey.Damask), [GitHub Desktop](https://flathub.org/apps/io.github.shiftey.Desktop) and [Memorize](https://flathub.org/apps/io.github.david_swift.Flashcards)
 
 **\*** = Only for `x86_64`, not `aarch64`
 
