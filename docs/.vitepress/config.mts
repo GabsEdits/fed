@@ -33,7 +33,7 @@ export default defineConfig({
       madeby: {
         show: true,
         name: "Gabs",
-        link: "https://www.gxbs.me",
+        link: "https://gxbs.dev",
       },
 
       copyleft: {
@@ -68,10 +68,10 @@ export default defineConfig({
           "A simple yet useful Shell Script that optimizes your system based on my prefrences. Also helps me to install everything I need for an new install.",
       },
     ],
-    ["meta", { name: "twitter:url", content: "https://fed.tools.gxbs.me" }],
+    ["meta", { name: "twitter:url", content: "https://fed.tools.gxbs.dev" }],
   ],
   sitemap: {
-    hostname: "https://fed.tools.gxbs.me",
+    hostname: "https://fed.tools.gxbs.dev",
   },
   vite: {
     css: {
