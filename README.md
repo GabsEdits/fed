@@ -28,7 +28,7 @@
 To download and execute the Fedora Workstation setup script, run the following command in your terminal:
 
 ```sh
-curl -O https://fed.tools.gxbs.me/script && sudo sh ./script
+curl -O https://fed.tools.gxbs.dev/script && sudo sh ./script
 ```
 
 ## Customization
